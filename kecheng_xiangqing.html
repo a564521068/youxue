@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>课程详情</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div id="header">
+  		<div class="header_top">
+  			<div class="container">
+	  			<span class="pull-left">您好，欢迎来到有学网！ <a href="#">请登录</a> <small>|</small> <a href="#">免费注册</a></span>
+	  			<span class="pull-right"><a href="#">帮助中心</a> <small>|</small> <a href="#">网站地图</a> <small>|</small> <a href="#">意见反馈</a></span>	
+  			</div>
+	  	</div>
+	  	<div class="header_content">
+	  		<div class="container">
+	  			<a href="#" class="logo logo-2"><img src="images/logo-2.png" alt=""></a>
+	  			<div class="header_search">
+	  				<div class="search_tab">
+  						<a href="javascript:;" id="search_course" class="on">课程</a>
+  						<a href="javascript:;" id="search_school">学校</a>
+  						<a href="javascript:;" id="search_teacher">老师</a>
+  						<a href="javascript:;" id="search_info">资料</a>
+	  				</div>
+	  				<form action="/" method="get" id="search_form">
+	  					<input type="text" class="search_input" name="kw" autocomplete="off" placeholder="搜索您想学的科目、老师试试">
+	  					<input type="submit" value="" class="search_btn">
+	  				</form>
+	  				<div class="search_tips">
+	  					<a href="#">免费</a>
+	  					<a href="#">英语</a>
+	  					<a href="#">物理</a>
+	  					<a href="#">小提琴</a>
+	  					<a href="#">架子鼓</a>
+	  					<a href="#">健身</a>
+	  					<a href="#">法语</a>
+	  					<a href="#">烘焙</a>
+	  					<a href="#">太极拳</a>
+	  				</div>
+	  				<div class="hot_search" style="display: none;">
+                        <h3>热门搜索<a href="javascript:;" class="hot_close">X</a></h3>
+                        <ul>
+                            <li class="clearfix" id="search_course_li" style="display: list-item;">
+                                <span class="hot_title">课程</span>
+                                <div class="hot_content">
+                                    <a href="#">美容</a>
+                                    <a href="#">驾驶</a>
+                                </div>
+                            </li>
+                            <li class="clearfix" id="search_school_li" style="display: none;">
+                                <span class="hot_title">学校</span>
+                                <div class="hot_content">
+                                    <a href="#">学校1</a>
+                                    <a href="#">学校2</a>
+                                </div>
+                            </li>
+                            <li class="clearfix" id="search_teacher_li" style="display: none;">
+                                <span class="hot_title">老师</span>
+                                <div class="hot_content">
+                                    <a href="#">老师1</a>
+                                    <a href="#">老师2</a>
+                            	 </div>
+                            </li>
+                            <li class="clearfix" id="search_info_li" style="display: none;">
+                                <span class="hot_title">资料</span>
+                                <div class="hot_content">
+                                    <a href="#">资料1</a>
+                                    <a href="#">资料2</a>
+                            	 </div>
+                            </li>
+                        </ul>
+                    </div>
+	  			</div>
+	  			<div class="weixin">
+	  				<img src="images/wx.jpg" alt="">
+	  				<span>扫一扫<br>关注有学网微信</span>
+	  			</div>
+	  		</div>
+	  	</div>
+  		<!-- /.container -->
+  	</div><!-- /#header -->
+  	<div id="nav">
+  		<div class="container">
+  			<div class="course_classify">
+  				<a href="javascript:;" class="classify">全部课程分类</a>
+  				<div id="nav_list" class="nav-list" style="display:none;">
+  					<div class="small_type">
+  						<ul>
+	  						<li>
+	  							<div class="left_type">
+	  								<h3><a href="#">语言培训</a></h3>
+	  								<p><a href="#">英语</a>  <a href="#">汉语</a>  <a href="#">小语种</a></p>
+	  							</div>
+	  							<div class="sub_type ">
+                                    <div class="sub_type_con">
+                                        <dl class="sub_type_dl cl">
+                                            <dt>
+                                                <a href="#">
+                                                    分类1
+                                                </a>
+                                            </dt>
+                                            <dd class="cell ">
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="sub_type_dl cl">
+                                            <dt>
+                                                <a href="#">
+                                                    分类1
+                                                </a>
+                                            </dt>
+                                            <dd class="cell ">
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="sub_type_dl cl">
+                                            <dt>
+                                                <a href="#">
+                                                    分类1
+                                                </a>
+                                            </dt>
+                                            <dd class="cell ">
+                                                <a href="#">子分类1</a>
+                                                <a href="#">子分类2</a>
+                                                <a href="#">子分类3</a>
+                                                <a href="#">子分类4</a>
+                                                <a href="#">子分类3</a>
+                                                <a href="#">子分类4</a>
+                                                <a href="#">子分类3</a>
+                                                <a href="#">子分类4</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+	  						</li>
+	  						<li>
+	  							<div class="left_type">
+	  								<h3><a href="#">资格考试</a></h3>
+	  								<p><a href="#">会计</a>  <a href="#">建筑</a>  <a href="#">其他</a></p>
+	  							</div>
+	  							<div class="sub_type ">
+                                    <div class="sub_type_con">
+                                        <dl class="sub_type_dl cl">
+                                            <dt>
+                                                <a href="#">
+                                                    分类11
+                                                </a>
+                                            </dt>
+                                            <dd class="cell ">
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="sub_type_dl cl">
+                                            <dt>
+                                                <a href="#">
+                                                    分类111
+                                                </a>
+                                            </dt>
+                                            <dd class="cell ">
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+	  						</li>
+	  						<li>
+	  							<div class="left_type">
+	  								<h3><a href="#">IT技能培训</a></h3>
+	  								<p><a href="#">语言</a>  <a href="#">设计</a> </p>
+	  							</div>
+	  							<div class="sub_type ">
+                                    <div class="sub_type_con">
+                                        <dl class="sub_type_dl cl">
+                                            <dt>
+                                                <a href="#">
+                                                    分类222
+                                                </a>
+                                            </dt>
+                                            <dd class="cell ">
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="sub_type_dl cl">
+                                            <dt>
+                                                <a href="#">
+                                                    分类222
+                                                </a>
+                                            </dt>
+                                            <dd class="cell ">
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+	  						</li>
+	  						<li>
+	  							<div class="left_type">
+	  								<h3><a href="#">学历教育</a></h3>
+	  								<p><a href="#">职高</a>  <a href="#">本科</a> <a href="#">研究生</a></p>
+	  							</div>
+	  							<div class="sub_type ">
+                                    <div class="sub_type_con">
+                                        <dl class="sub_type_dl cl">
+                                            <dt>
+                                                <a href="#">
+                                                    分类333
+                                                </a>
+                                            </dt>
+                                            <dd class="cell ">
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="sub_type_dl cl">
+                                            <dt>
+                                                <a href="#">
+                                                    分类333
+                                                </a>
+                                            </dt>
+                                            <dd class="cell ">
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+	  						</li>
+	  						<li>
+	  							<div class="left_type">
+	  								<h3><a href="#">中小学辅导</a></h3>
+	  								<p><a href="#">小学</a>  <a href="#">中学</a> <a href="#">高中</a></p>
+	  							</div>
+	  							<div class="sub_type ">
+                                    <div class="sub_type_con">
+                                        <dl class="sub_type_dl cl">
+                                            <dt>
+                                                <a href="#">
+                                                    分类444
+                                                </a>
+                                            </dt>
+                                            <dd class="cell ">
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="sub_type_dl cl">
+                                            <dt>
+                                                <a href="#">
+                                                    分类444
+                                                </a>
+                                            </dt>
+                                            <dd class="cell ">
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+	  						</li>
+	  						<li>
+	  							<div class="left_type">
+	  								<h3><a href="#">夏令营/冬令营</a></h3>
+	  								<p><a href="#">夏令营</a>  <a href="#">冬令营</a> <a href="#">游学</a></p>
+	  							</div>
+	  							<div class="sub_type ">
+                                    <div class="sub_type_con">
+                                        <dl class="sub_type_dl cl">
+                                            <dt>
+                                                <a href="#">
+                                                    分类555
+                                                </a>
+                                            </dt>
+                                            <dd class="cell ">
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="sub_type_dl cl">
+                                            <dt>
+                                                <a href="#">
+                                                    分类555
+                                                </a>
+                                            </dt>
+                                            <dd class="cell ">
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+	  						</li>
+	  						<li>
+	  							<div class="left_type">
+	  								<h3><a href="#">出国留学</a></h3>
+	  								<p><a href="#">高中留学</a>  <a href="#">本科留学</a> <a href="#">国际高中</a> <a href="#">留学预科</a> <a href="#">研究生留学</a></p>
+	  							</div>
+	  							<div class="sub_type ">
+                                    <div class="sub_type_con">
+                                        <dl class="sub_type_dl cl">
+                                            <dt>
+                                                <a href="#">
+                                                    分类666
+                                                </a>
+                                            </dt>
+                                            <dd class="cell ">
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="sub_type_dl cl">
+                                            <dt>
+                                                <a href="#">
+                                                    分类666
+                                                </a>
+                                            </dt>
+                                            <dd class="cell ">
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+	  						</li>
+	  						<li>
+	  							<div class="left_type">
+	  								<h3><a href="#">文体艺术</a></h3>
+	  								<p><a href="#">艺术</a>  <a href="#">音乐</a> <a href="#">舞蹈</a> <a href="#">棋类</a><a href="#">体育</a> <a href="#">国学</a></p>
+	  							</div>
+	  							<div class="sub_type ">
+                                    <div class="sub_type_con">
+                                        <dl class="sub_type_dl cl">
+                                            <dt>
+                                                <a href="#">
+                                                    分类777
+                                                </a>
+                                            </dt>
+                                            <dd class="cell ">
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="sub_type_dl cl">
+                                            <dt>
+                                                <a href="#">
+                                                    分类777
+                                                </a>
+                                            </dt>
+                                            <dd class="cell ">
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+	  						</li>
+	  						<li>
+	  							<div class="left_type">
+	  								<h3><a href="#">就业技能</a></h3>
+	  								<p><a href="#">驾驶</a>  <a href="#">餐饮</a> <a href="#">美容</a></p>
+	  							</div>
+	  							<div class="sub_type ">
+                                    <div class="sub_type_con">
+                                        <dl class="sub_type_dl cl">
+                                            <dt>
+                                                <a href="#">
+                                                    分类888
+                                                </a>
+                                            </dt>
+                                            <dd class="cell ">
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="sub_type_dl cl">
+                                            <dt>
+                                                <a href="#">
+                                                    分类888
+                                                </a>
+                                            </dt>
+                                            <dd class="cell ">
+                                            	<a href="#">子分类1</a>
+                                            	<a href="#">子分类2</a>
+                                            	<a href="#">子分类3</a>
+                                            	<a href="#">子分类4</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+	  						</li>
+	  					</ul>
+  					</div>
+  				</div>
+  			</div>
+			<div class="main_nav">
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#" class="current">找课程</a></li>
+					<li><a href="#">找学校</a></li>
+					<li><a href="#">找老师</a></li>
+					<li><a href="#">找资料</a></li>
+					<li><a href="#">提需求</a></li>
+					<li><a href="#">推荐学生</a></li>
+				</ul>
+			</div>
+  		</div>
+  	</div><!-- /#nav -->
+    <div id="located">
+        <div class="container">
+            <p>当前位置：<a href="#">首页</a> > <a href="#">找课程</a> > <a href="#">IT技能培训</a> > <a href="#">语言</a> > <a href="#">PHP</a> > 你必须要学的PHP实战vip项目</p>
+        </div>
+    </div>
+    <div id="kechengxq">
+        <div class="container">
+            <div class="course_profile">
+                <img src="images/course-1.jpg" alt="" class="course_img">
+                <div class="rcont">
+                    <h1>
+                        <div class="l"><b>你必须要学的PHP实战vip项目</b><span class="tj">推荐</span><span class="st">试听</span></div>
+                        <div class="r"><a class="sc"><i class="fa fa-star"></i> 收藏</a><a class="fx"><i class="fa fa-share-alt"></i> 分享</a><a class="jc"><i class="fa fa-warning"></i> 纠错</a></div>
+                    </h1>
+                    <div class="price_row">
+                        <div class="l">
+                            价格：￥3200   会员价：<span>￥<b>3900</b></span>  <a href="#">（注册可享受会员价）</a>
+                        </div>
+                        <div class="r">
+                            <img src="images/tel.png" alt="">
+                            <h5>免费咨询热线：</h5>
+                            <span>400-656-8888</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p><b>目标人群：</b>PHP学习者</p>
+                        <p><b>开课时间：</b>9月上旬</p>
+                        <p><b>上课地点：</b><span class="addr" title="北京市朝阳区东三环中路建外SOHO东区6号楼三层北京市朝阳区东三环中路建外SOHO东区6号楼三层">北京市朝阳区东三环中路建外SOHO东区6号楼三层北京市朝阳区东三环中路建外SOHO东区6号楼三层,北京市朝阳区双井福利购物广场4楼</span><a href="#" class="map"><i class="fa fa-map-marker"></i> 地图</a></p>
+                        <p class="score"><b>课程热度：</b><span data-score="5"></span></p>
+                    </div>
+                    <div class="tags">
+                        <a href="#">PHP培训</a>
+                        <a href="#">PHP学习</a>
+                        <a href="#">北京PHP培训班</a>
+                    </div>
+                    <div class="button">
+                        <a href="" class="zxbm">在线报名</a>
+                        <a href="" class="st">试听</a>
+                    </div>
+                </div>
+            </div>
+            <div class="course_details">
+                <div class="course_nav">
+                    <ul>
+                        <li class="on">课程简介</li>
+                        <li>报名流程</li>
+                        <li>支付方式</li>
+                        <li>课程评价</li>
+                    </ul>
+                </div>
+                <div class="detail-box info">
+                    <h5 class="tit-1">课程简介</h5>
+                    <table>
+                        <tr>
+                            <td width="250">适用人群</td>
+                            <td>PHP学习者</td>
+                        </tr>
+                        <tr>
+                            <td>学到什么</td>
+                            <td>PHP项目开发技能和技巧</td>
+                        </tr>
+                    </table>
+                    <div class="info_detail">
+                        <p>课程从第一章开始就引入项目实战，第一节课利用PHP+MYSQL实现一个排队的算法，殊胜之处在于超越了PHP语法和SQL语句，着重分析实现思路，本课内容曾被业界知名PHP讲师引用为课堂教学案例，在IT培训行业广为流传。</p>
+                        <p>第二节课是实战篇，结合PHP语法和MYSQL语句现场编写一个网站注册登录模块，举一反三，再复杂的需求也难不倒你！</p>
+                        <p>第三节课更加精彩，综合运用PHP、HTML和JS语言，现场演示编写一个计算器，解决了学员课下提出的疑问，同时也满足了学员多方面的学习需求！</p>
+                        <p>在PHP重难点分析章节中，由浅入深的从环境搭建讲到数据库开发、PHP函数、面向对象、PHP扩展等内容，不时穿插讲解网站开发小技巧，深入浅出的带你学习网站开发技术。</p>
+                        <p>在开源项目实战篇中，我们结合市面上非常流行的Discuz!社区系统，以及WordPress博客系统为大家介绍快速搭建开源项目及其使用的方法，非常实用！我们知道，在市场营销领域,绝大多数的人都懂得要建博客来推广网站.但不是所有人都会认真考虑制作一个合格的推广型的博客,本系列课程因此而诞生！</p>
+                    </div>
+                </div>
+                <div class="detail-box liucheng">
+                    <h5 class="tit-1">报名流程</h5>
+                    <img src="images/bmlc.jpg" alt="" class="bmlc">
+                    <p>备注：到校支付后期会有专享客服或学校客服与您确认到校时间。</p>
+                </div>
+                <div class="detail-box pay">
+                    <h5 class="tit-1">支付方式</h5>
+                    <div class="l">
+                        <h4>银行汇款</h4>
+                        <table>
+                        <tr>
+                            <td>开户行</td>
+                            <td>户  名</td>
+                            <td>账  号</td>
+                        </tr>
+                        <tr>
+                            <td>交通银行北京育惠东路支行</td>
+                            <td>井继展</td>
+                            <td>6222 6009 1005 9620 219</td>
+                        </tr>
+                        <tr>
+                            <td>中国农业银行北京天通东苑分理处</td>
+                            <td>井继展</td>
+                            <td>6228 4800 1828 5924 975</td>
+                        </tr>
+                        <tr>
+                            <td>中国建设银行北京建国门外大街支行营业部</td>
+                            <td>井继展</td>
+                            <td>6217 0000 1001 8995 228</td>
+                        </tr>
+                        <tr>
+                            <td>中国银行北京天通苑支行</td>
+                            <td>井继展</td>
+                            <td>6217 5801 0000 4578 696</td>
+                        </tr>
+                    </table>
+                    </div>
+                    <div class="rwx">
+                        <p>微信支付（扫码加微信号后进行支付）</p>
+                        <img src="images/wx_pay.jpg" alt="">
+                    </div>
+                </div>
+                <div class="detail-box comment">
+                    <h5 class="tit-1">课程评价 <span style="color:#f60;font-size:12px;">251</span></h5>
+                    <div class="myd">
+                        <div class="l">
+                            <span>100%</span>
+                            <p>满意度</p>
+                        </div>
+                        <div class="r">
+                            <div class="pj">
+                                <span>好评（438）</span>
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="pj">
+                                <span>中评（0）</span>
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="pj">
+                                <span>差评（0）</span>
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                  </div>
+                                </div>
+                            </div>
+                              
+                        </div>
+                    </div>
+                    <div class="comment_details">
+                          <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#all_comment" aria-controls="all_comment" role="tab" data-toggle="tab">全部</a></li>
+                            <li role="presentation"><a href="#good_comment" aria-controls="good_comment" role="tab" data-toggle="tab">好评 (438)</a></li>
+                            <li role="presentation"><a href="#middle_comment" aria-controls="middle_comment" role="tab" data-toggle="tab">中评 (0)</a></li>
+                            <li role="presentation"><a href="#bad_comment" aria-controls="bad_comment" role="tab" data-toggle="tab">差评 (0)</a></li>
+                          </ul>
+                          <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="all_comment">
+                                <ul class="comment_ul">
+                                    <li>
+                                        <img src="images/female.png" alt="" class="female">
+                                        <p class="score"><b class="tit"><small>刘**</small> 秋季班小学四年级英语尖子班</b><b class="myd">满意度：<span data-score="5"></span> (5)</b></p>
+                                        <p>遗憾的是四升五暑假刘阳老师就不带这个班了，一直没敢告诉孩子，这么好的老师，难得啊！<span class="time">( 2015-04-28 13:31:41 )</span></p>
+                                    </li>
+                                     <li>
+                                        <img src="images/female.png" alt="" class="female">
+                                        <p class="score"><b class="tit"><small>刘**</small> 秋季班小学四年级英语尖子班</b><b class="myd">满意度：<span data-score="5"></span> (5)</b></p>
+                                        <p>有幸寒假转入刘阳老师的四尖班次，刘老师上课风趣幽默，积极引导孩子思路，不断拓展知识点，杨源超喜欢上刘老师的课！当然，还有一个原因估计就是看到帅哥了！<span class="time">( 2015-04-28 13:31:41 )</span></p>
+                                    </li>
+                                     <li>
+                                        <img src="images/female.png" alt="" class="female">
+                                        <p class="score"><b class="tit"><small>刘**</small> 秋季班小学四年级英语尖子班</b><b class="myd">满意度：<span data-score="5"></span> (5)</b></p>
+                                        <p>遗憾的是四升五暑假刘阳老师就不带这个班了，一直没敢告诉孩子，这么好的老师，难得啊！<span class="time">( 2015-04-28 13:31:41 )</span></p>
+                                    </li>
+                                     <li>
+                                        <img src="images/female.png" alt="" class="female">
+                                        <p class="score"><b class="tit"><small>刘**</small> 秋季班小学四年级英语尖子班</b><b class="myd">满意度：<span data-score="5"></span> (5)</b></p>
+                                        <p>遗憾的是四升五暑假刘阳老师就不带这个班了，一直没敢告诉孩子，这么好的老师，难得啊！<span class="time">( 2015-04-28 13:31:41 )</span></p>
+                                    </li>
+                                </ul>
+                                <ul id="pagegation">
+                                    <li><a href="#">上一页</a></li>
+                                    <li><a href="#" class="on">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">...</a></li>
+                                    <li><a href="#">32</a></li>
+                                    <li><a href="#">下一页</a></li>
+                                </ul>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="good_comment">
+                                  <ul class="comment_ul">
+                                    <li>
+                                        <img src="images/female.png" alt="" class="female">
+                                        <p class="score"><b class="tit"><small>李** </small> 秋季班小学四年级英语尖子班</b><b class="myd">满意度：<span data-score="5"></span> (5)</b></p>
+                                        <p>刘阳老师讲课思路清晰，幽默，很容易听懂，感觉学得轻松且印象深刻，尤其是补充的一些题既有趣又能提高能力，比如变态日本题，还有秒杀大法，太酷了！<span class="time">( 2015-04-28 13:31:41 )</span></p>
+                                    </li>
+                                     <li>
+                                        <img src="images/female.png" alt="" class="female">
+                                        <p class="score"><b class="tit"><small>李**</small> 秋季班小学四年级英语尖子班</b><b class="myd">满意度：<span data-score="5"></span> (5)</b></p>
+                                        <p>很好<span class="time">( 2015-04-28 13:31:41 )</span></p>
+                                    </li>
+                                     <li>
+                                        <img src="images/female.png" alt="" class="female">
+                                        <p class="score"><b class="tit"><small>李**</small> 秋季班小学四年级英语尖子班</b><b class="myd">满意度：<span data-score="5"></span> (5)</b></p>
+                                        <p>孩子非常喜欢的刘阳老师，看学而思网校上刘老师的视频，爱不释手！<span class="time">( 2015-04-28 13:31:41 )</span></p>
+                                    </li>
+                                     <li>
+                                        <img src="images/female.png" alt="" class="female">
+                                        <p class="score"><b class="tit"><small>李**</small> 秋季班小学四年级英语尖子班</b><b class="myd">满意度：<span data-score="5"></span> (5)</b></p>
+                                        <p>我非常喜欢听刘阳老师讲得数学，讲课思路清晰<span class="time">( 2015-04-28 13:31:41 )</span></p>
+                                    </li>
+                                </ul>
+                                <ul id="pagegation">
+                                    <li><a href="#">上一页</a></li>
+                                    <li><a href="#" class="on">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">...</a></li>
+                                    <li><a href="#">32</a></li>
+                                    <li><a href="#">下一页</a></li>
+                                </ul>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="middle_comment">
+                                <div class="wrapper"><p>暂时没有评价哦 ~</p></div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="bad_comment">
+                                <div class="wrapper"><p>暂时没有评价哦 ~</p></div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="course_rside">
+                <div id="school_panel">
+                    <div class="top">
+                        <img src="images/school-logo.png" alt="" class="school_logo">
+                        <h5>合肥恒企会计培训</h5>
+                        <p>学校人气：5375</p>
+                        <p>课程总数：共38个</p>
+                    </div>
+                    <div class="tgs">
+                        <a href="#">SAT培训</a>
+                        <a href="#">雅思培训</a>
+                        <a href="#">托福培训</a>
+                        <a href="#">四级六级培训</a>
+                        <a href="#">少儿英语培训</a>
+                    </div>
+                    <div class="contact">
+                        <img src="images/tel.png" class="tel_icon" alt="">
+                        <h5>免费咨询热线：</h5>
+                        <span class="tel">400-656-8888</span>
+                        <div class="qq_3">
+                            <a href="#"><img src="images/qq_contact.png" alt=""></a>
+                            <a href="#"><img src="images/qq_contact.png" alt=""></a>
+                            <a href="#"><img src="images/qq_contact.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="bot">
+                        <a href="#" class="ent">进入学校</a>
+                        <a href="#" class="sc">收藏学校</a>
+                    </div>
+                </div>
+                <div id="rmkctj" class="mt20">
+                    <h5>热门课程推荐</h5>
+                    <ul>
+                        <li>
+                            <img src="images/school-1.jpg" alt="">
+                            <p class="tit">北京中医推拿培训班</p>
+                            <p class="d">北京基柱堂</p>
+                            <p class="price text-right">¥990.00</p>
+                        </li>
+                        <li>
+                            <img src="images/school-1.jpg" alt="">
+                            <p class="tit">北京中医推拿培训班</p>
+                            <p class="d">北京基柱堂</p>
+                            <p class="price text-right">¥990.00</p>
+                        </li>
+                        <li>
+                            <img src="images/school-1.jpg" alt="">
+                            <p class="tit">北京中医推拿培训班</p>
+                            <p class="d">北京基柱堂</p>
+                            <p class="price text-right">¥990.00</p>
+                        </li>
+                        <li>
+                            <img src="images/school-1.jpg" alt="">
+                            <p class="tit">北京中医推拿培训班</p>
+                            <p class="d">北京基柱堂</p>
+                            <p class="price text-right">¥990.00</p>
+                        </li>
+                        <li>
+                            <img src="images/school-1.jpg" alt="">
+                            <p class="tit">北京中医推拿培训班</p>
+                            <p class="d">北京基柱堂</p>
+                            <p class="price text-right">¥990.00</p>
+                        </li>
+                        <li>
+                            <img src="images/school-1.jpg" alt="">
+                            <p class="tit">北京中医推拿培训班</p>
+                            <p class="d">北京基柱堂</p>
+                            <p class="price text-right">¥990.00</p>
+                        </li>
+                        <li>
+                            <img src="images/school-1.jpg" alt="">
+                            <p class="tit">北京中医推拿培训班</p>
+                            <p class="d">北京基柱堂</p>
+                            <p class="price text-right">¥990.00</p>
+                        </li>
+                        <li>
+                            <img src="images/school-1.jpg" alt="">
+                            <p class="tit">北京中医推拿培训班</p>
+                            <p class="d">北京基柱堂</p>
+                            <p class="price text-right">¥990.00</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="index_hot">
+        <div class="hot_course">
+            <div class="container">
+                <h3>热门课程</h3>
+                <ul>
+                    <li><a href="#">雅思</a></li>
+                    <li><a href="#">托福</a></li>
+                    <li><a href="#">SAT</a></li>
+                    <li><a href="#">SSAT</a></li>
+                    <li><a href="#">GRE</a></li>
+                    <li><a href="#">GMAT</a></li>
+                    <li><a href="#">四级六级</a></li>
+                    <li><a href="#">少儿英语</a></li>
+                    <li><a href="#">新概念英语</a></li>
+                    <li><a href="#">剑桥英语</a></li>
+                    <li><a href="#">会计从业资格</a></li>
+                    <li><a href="#">初级会计师</a></li>
+                    <li><a href="#">平面设计</a></li>
+                    <li><a href="#">网页设计</a></li>
+                    <li><a href="#">考研辅导</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">吉他</a></li>
+                    <li><a href="#">意大利留学</a></li>
+                    <li><a href="#">德国留学</a></li>
+                    <li><a href="#">拉丁舞</a></li>
+                    <li><a href="#">街舞</a></li>
+                    <li><a href="#">芭蕾舞</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- /#index_hot -->
+    <div id="footer">
+        <div class="top">
+            <div class="container">
+                <div class="lbox">
+                    <h5>联系方式</h5>
+                    <div class="l">
+                        <img src="images/wx.jpg" alt="">
+                        <p>关注微信</p>
+                    </div>
+                    <div class="r">
+                        <p>电话：4000-9888-95　010-57790431</p>
+                        <p>传真： 010-84671756</p>
+                        <p>E-mail:edusoo@126.com</p>
+                        <p>地址：北京市朝阳区立汤路218号C座1628室  （100015）</p>
+                    </div>
+                </div>
+                <div class="rbox">
+                    <dl>
+                        <dt>会员特权</dt>
+                        <dd><a href="#">注册会员</a></dd>
+                        <dd><a href="#">会员权益</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>课程与订单</dt>
+                        <dd><a href="#">购课流程</a></dd>
+                        <dd><a href="#">订单查询</a></dd>
+                        <dd><a href="#">课程退换</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>支付方式</dt>
+                        <dd><a href="#">网银支付</a></dd>
+                        <dd><a href="#">快捷支付</a></dd>
+                        <dd><a href="#">现金支付</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>商务合作</dt>
+                        <dd><a href="#">机构合作</a></dd>
+                        <dd><a href="#">代理加盟</a></dd>
+                        <dd><a href="#">媒体合作</a></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+           <div class="container">
+                <p><a href="#">关于我们</a>  |  <a href="#">招聘信息</a>  |  <a href="#">网站地图</a>  |  <a href="#">投诉建议</a>  |  <a href="#">联系我们</a></p>
+                <p>Copyright @ 2011-2015 www.edusoo.com  All Rights Reserved.　有学网　京公网安备：110105011265号　京ICP备09004376号</p>
+                <p>版权所有　北京天恒有孚教育咨询有限责任公司</p>
+           </div>
+        </div>
+    </div><!-- /#footer -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/star/jquery.raty.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        $('.classify').mouseenter(function () {
+            $('.nav-list').stop(true, false).slideDown(500);
+        });
+        $('.course_classify').mouseleave(function () {
+            $('.nav-list').stop(true, false).slideUp(500);
+        });
+        navClip('course_nav', 'detail-box', 'on');
+    </script>
+  </body>
+</html>
